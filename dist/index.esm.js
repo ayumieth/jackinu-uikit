@@ -2100,11 +2100,9 @@ var Icon$U = function (props) {
 };
 
 var Logo = function (_a) {
-    var isDark = _a.isDark, props = __rest(_a, ["isDark"]);
-    var textColor = isDark ? "#FFFFFF" : "#000000";
+    _a.isDark; var props = __rest(_a, ["isDark"]);
     return (React.createElement(Svg, __assign({ viewBox: "0 0 160 36" }, props),
-        React.createElement("path", { d: "M24 6H0V30H24V6Z", fill: "url(#pattern0)" }),
-        React.createElement("path", { d: "M30.08 26V10.544H41.696V13.904H34.592V16.568H40.784V19.976H34.592V26H30.08ZM46.1008 26.24C45.3808 26.24 44.7088 26.112 44.0848 25.856C43.4768 25.6 42.9888 25.2 42.6208 24.656C42.2528 24.112 42.0688 23.424 42.0688 22.592C42.0688 21.392 42.4688 20.464 43.2688 19.808C44.0688 19.136 45.2768 18.8 46.8928 18.8H49.8448V18.584C49.8448 18.136 49.6608 17.808 49.2928 17.6C48.9248 17.392 48.2768 17.288 47.3488 17.288C46.0368 17.288 44.7408 17.488 43.4608 17.888V15.176C44.0368 14.952 44.7568 14.768 45.6208 14.624C46.4848 14.464 47.3648 14.384 48.2608 14.384C50.0688 14.384 51.5008 14.752 52.5568 15.488C53.6128 16.224 54.1407 17.392 54.1407 18.992V26H50.2048L49.9888 25.088C49.5888 25.44 49.0688 25.72 48.4288 25.928C47.8048 26.136 47.0288 26.24 46.1008 26.24ZM47.6367 23.6C48.1488 23.6 48.5808 23.512 48.9328 23.336C49.3008 23.16 49.6048 22.944 49.8448 22.688V21.272H47.6608C46.6688 21.272 46.1728 21.664 46.1728 22.448C46.1728 23.216 46.6608 23.6 47.6367 23.6ZM60.6294 26.24C59.6534 26.24 58.7334 26.168 57.8694 26.024C57.0214 25.896 56.3494 25.728 55.8534 25.52V22.28C56.4134 22.536 57.0774 22.736 57.8454 22.88C58.6294 23.024 59.2934 23.096 59.8374 23.096C60.4134 23.096 60.8454 23.08 61.1334 23.048C61.4374 23.016 61.5894 22.88 61.5894 22.64C61.5894 22.368 61.3254 22.16 60.7974 22.016C60.2694 21.872 59.6054 21.664 58.8054 21.392C57.7654 21.024 56.9894 20.592 56.4774 20.096C55.9654 19.6 55.7094 18.88 55.7094 17.936C55.7094 16.8 56.1574 15.928 57.0534 15.32C57.9494 14.696 59.3574 14.384 61.2774 14.384C62.0134 14.384 62.7734 14.44 63.5574 14.552C64.3414 14.664 64.9574 14.792 65.4054 14.936V18.104C64.9254 17.896 64.3974 17.744 63.8214 17.648C63.2614 17.552 62.7494 17.504 62.2854 17.504C61.7734 17.504 61.3174 17.528 60.9174 17.576C60.5174 17.624 60.3174 17.76 60.3174 17.984C60.3174 18.24 60.5414 18.424 60.9894 18.536C61.4534 18.648 62.0694 18.824 62.8374 19.064C63.7014 19.32 64.3734 19.6 64.8534 19.904C65.3494 20.208 65.6934 20.576 65.8854 21.008C66.0934 21.44 66.1974 21.976 66.1974 22.616C66.1974 23.768 65.7254 24.664 64.7814 25.304C63.8534 25.928 62.4694 26.24 60.6294 26.24ZM72.4051 26.24C70.8851 26.24 69.7811 25.856 69.0931 25.088C68.4051 24.32 68.0611 23.28 68.0611 21.968V17.96H66.5731V14.624H68.0611V12.296L72.5731 11.216V14.624H75.1891L75.0211 17.96H72.5731V21.632C72.5731 22.112 72.6931 22.456 72.9331 22.664C73.1731 22.856 73.5411 22.952 74.0371 22.952C74.5011 22.952 74.9731 22.872 75.4531 22.712V25.712C74.6051 26.064 73.5891 26.24 72.4051 26.24ZM81.7143 26.24C80.6743 26.24 79.6903 26.16 78.7623 26C77.8343 25.824 77.0423 25.584 76.3863 25.28V21.56C77.1063 21.896 77.9063 22.168 78.7863 22.376C79.6663 22.584 80.4903 22.688 81.2583 22.688C82.0583 22.688 82.6583 22.624 83.0583 22.496C83.4743 22.352 83.6823 22.04 83.6823 21.56C83.6823 21.224 83.5623 20.96 83.3223 20.768C83.0983 20.576 82.7383 20.4 82.2423 20.24C81.7623 20.08 81.1303 19.88 80.3463 19.64C79.3063 19.304 78.4823 18.936 77.8743 18.536C77.2663 18.136 76.8263 17.648 76.5543 17.072C76.2983 16.496 76.1703 15.792 76.1703 14.96C76.1703 13.44 76.7063 12.288 77.7783 11.504C78.8663 10.704 80.4743 10.304 82.6023 10.304C83.4503 10.304 84.3223 10.376 85.2183 10.52C86.1303 10.664 86.8663 10.824 87.4263 11V14.744C86.6743 14.44 85.9543 14.224 85.2663 14.096C84.5783 13.968 83.9303 13.904 83.3223 13.904C82.6183 13.904 82.0183 13.96 81.5223 14.072C81.0263 14.184 80.7783 14.472 80.7783 14.936C80.7783 15.336 80.9863 15.632 81.4023 15.824C81.8343 16 82.5943 16.232 83.6823 16.52C84.9463 16.856 85.9063 17.264 86.5623 17.744C87.2343 18.224 87.6903 18.784 87.9303 19.424C88.1703 20.048 88.2903 20.76 88.2903 21.56C88.2903 22.968 87.7463 24.104 86.6583 24.968C85.5703 25.816 83.9223 26.24 81.7143 26.24ZM91.8734 26L88.8734 14.624H93.2414L94.5854 20.264L95.9054 16.256V14.624H99.2174L100.801 20.264L102.097 14.624H106.465L103.465 26H99.4334L97.7054 20.84L95.9774 26H91.8734ZM110.624 26.24C109.904 26.24 109.232 26.112 108.608 25.856C108 25.6 107.512 25.2 107.144 24.656C106.776 24.112 106.592 23.424 106.592 22.592C106.592 21.392 106.992 20.464 107.792 19.808C108.592 19.136 109.8 18.8 111.416 18.8H114.368V18.584C114.368 18.136 114.184 17.808 113.816 17.6C113.448 17.392 112.8 17.288 111.872 17.288C110.56 17.288 109.264 17.488 107.984 17.888V15.176C108.56 14.952 109.28 14.768 110.144 14.624C111.008 14.464 111.888 14.384 112.784 14.384C114.592 14.384 116.024 14.752 117.08 15.488C118.136 16.224 118.664 17.392 118.664 18.992V26H114.728L114.512 25.088C114.112 25.44 113.592 25.72 112.952 25.928C112.328 26.136 111.552 26.24 110.624 26.24ZM112.16 23.6C112.672 23.6 113.104 23.512 113.456 23.336C113.824 23.16 114.128 22.944 114.368 22.688V21.272H112.184C111.192 21.272 110.696 21.664 110.696 22.448C110.696 23.216 111.184 23.6 112.16 23.6ZM120.713 31.184V14.624H124.625L124.841 15.536C125.305 15.168 125.809 14.888 126.353 14.696C126.913 14.488 127.561 14.384 128.297 14.384C129.993 14.384 131.297 14.816 132.209 15.68C133.137 16.528 133.601 17.976 133.601 20.024C133.601 22.056 133.113 23.6 132.137 24.656C131.161 25.712 129.817 26.24 128.105 26.24C126.969 26.24 126.009 26.024 125.225 25.592V31.184H120.713ZM126.953 22.952C127.609 22.952 128.113 22.72 128.465 22.256C128.817 21.792 128.993 21.072 128.993 20.096C128.993 19.152 128.825 18.512 128.489 18.176C128.169 17.84 127.673 17.672 127.001 17.672C126.329 17.672 125.737 17.896 125.225 18.344V22.376C125.481 22.568 125.737 22.712 125.993 22.808C126.249 22.904 126.569 22.952 126.953 22.952Z", fill: textColor }),
+        React.createElement("path", { xmlns: "http://www.w3.org/2000/svg", "fill-rule": "evenodd", "clip-rule": "evenodd", d: "M70.1593 0C69.4423 0 68.7802 0.383808 68.4238 1.00598L44.9999 41.9024C49.3045 44.3877 54.8089 42.9128 57.2941 38.6082L78.5644 1.7671C79.0178 0.981721 78.451 0 77.5441 0H70.1593ZM15.5203 3.69234C16.0203 2.69234 17.6203 0.692337 20.0203 0.692337C22 0.692337 23.5 2.10408 24.0203 2.69234C25.4059 4.25911 25.8347 4.20551 27.6385 3.98004C28.5957 3.86039 29.9401 3.69234 32.0203 3.69234C36.7287 3.69234 38.4348 4.65455 40.1734 5.63513L40.2749 5.69234L26 30.1923C25.8514 29.8703 25.6922 29.5071 25.5222 29.1193L25.5219 29.1187L25.5219 29.1187C24.5484 26.8976 23.2228 23.8734 21.5203 23.1923C20.1525 22.6452 19.2337 23.4451 18.2726 24.2819C17.477 24.9745 16.6525 25.6923 15.5203 25.6923C14.2006 25.6923 13.4382 24.9957 12.7183 24.338C12.0744 23.7496 11.4645 23.1923 10.5203 23.1923C9.52026 23.1923 9.02026 23.6923 8.45776 24.2548C7.89526 24.8173 7.27026 25.4423 6.02026 25.6923C4.03367 26.0897 2.3628 23.014 1.25854 20.9813C0.973157 20.456 0.725621 20.0004 0.520259 19.6923C-0.479741 18.1923 0.0202591 16.6923 1.52026 15.1923C3.02026 13.6923 3.52026 13.1923 3.52026 11.1923C3.52026 9.19234 7.02026 6.69234 9.52026 5.19234C11.5203 3.99234 14.3536 3.69234 15.5203 3.69234ZM13 10.8352L7 13.6923C7.2 13.1209 7.6 11.8638 7.6 11.4066C7.6 10.8352 7.6 9.69234 9.4 9.69234C10.84 9.69234 12.4 10.4542 13 10.8352ZM43.2115 5.19234C42.4969 5.19234 41.8367 5.57354 41.4794 6.19235L27.0003 31.2712L34.7945 35.7712L50.8114 8.19689C51.5859 6.86356 50.6239 5.19234 49.082 5.19234L43.2115 5.19234ZM54.5163 4.19269C55.2308 2.95489 56.5514 2.19234 57.9806 2.19234L62.6429 2.19234C64.1832 2.19234 65.1454 3.86043 64.3741 5.19377L43.7944 40.7712L36.0001 36.2712L54.5163 4.19269Z", fill: "#566FFE" }),
         React.createElement("defs", null,
             React.createElement("pattern", { id: "pattern0", patternContentUnits: "objectBoundingBox", width: "1", height: "1" },
                 React.createElement("use", { xlinkHref: "#image0", transform: "scale(0.00161551 0.00277778)" })),
@@ -2761,7 +2759,7 @@ var ThemeSwitcher = function (_a) {
     return (React.createElement(Button, { variant: "text", onClick: function () { return toggleTheme(!isDark); }, padding: "0px 8px" },
         React.createElement(Flex, { alignItems: "center" },
             React.createElement(SunIcon, { fill: isDark ? "white" : "#183B56" }),
-            React.createElement(Text, { color: isDark ? "white" : "#183B56", mx: "4px" }, "/"),
+            React.createElement(Text, { color: isDark ? "white" : "#183B56", mx: "4px" }),
             React.createElement(MoonIcon, { fill: isDark ? "white" : "#183B56" }))));
 };
 var ThemeSwitcher$1 = React.memo(ThemeSwitcher, function (prev, next) { return prev.isDark === next.isDark; });
@@ -2789,8 +2787,35 @@ var Avatar = function (_a) {
 };
 var templateObject_1$J, templateObject_2$f;
 
-var Wrapper$1 = styled.div(templateObject_1$K || (templateObject_1$K = __makeTemplateObject(["\n  position: relative;\n  width: 100%;\n"], ["\n  position: relative;\n  width: 100%;\n"])));
-var StyledNav = styled.nav(templateObject_2$g || (templateObject_2$g = __makeTemplateObject(["\n  position: fixed;\n  top: ", ";\n  left: 0;\n  right: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  height: ", "px;\n  background-color: ", ";\n  border-bottom: solid 2px rgba(133, 133, 133, 0.1);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n"], ["\n  position: fixed;\n  top: ", ";\n  left: 0;\n  right: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  height: ", "px;\n  background-color: ", ";\n  border-bottom: solid 2px rgba(133, 133, 133, 0.1);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n"])), function (_a) {
+var getLeft$1 = function (_a) {
+    var position = _a.position;
+    if (position === "top-right") {
+        return "100%";
+    }
+    return "50%";
+};
+var getBottom$1 = function (_a) {
+    var position = _a.position;
+    if (position === "top" || position === "top-right") {
+        return "100%";
+    }
+    return "auto";
+};
+var DropdownContent$1 = styled.div(templateObject_1$K || (templateObject_1$K = __makeTemplateObject(["\n  width: max-content;\n  display: none;\n  flex-direction: column;\n  position: absolute;\n  transform: translate(-50%, 0);\n  left: ", ";\n  bottom: ", ";\n  padding: 16px;\n  max-height: 500px;\n  overflow-y: auto;\n  z-index: 10;\n  border-radius: 20;\n"], ["\n  width: max-content;\n  display: none;\n  flex-direction: column;\n  position: absolute;\n  transform: translate(-50%, 0);\n  left: ", ";\n  bottom: ", ";\n  padding: 16px;\n  max-height: 500px;\n  overflow-y: auto;\n  z-index: 10;\n  border-radius: 20;\n"])), getLeft$1, getBottom$1);
+var Container$5 = styled.div(templateObject_2$g || (templateObject_2$g = __makeTemplateObject(["\n  position: relative;\n  &:hover ", ", &:focus-within ", " {\n    display: flex;\n  }\n"], ["\n  position: relative;\n  &:hover ", ", &:focus-within ", " {\n    display: flex;\n  }\n"])), DropdownContent$1, DropdownContent$1);
+var Dropdown$1 = function (_a) {
+    var target = _a.target, _b = _a.position, position = _b === void 0 ? "bottom" : _b, children = _a.children;
+    return (React.createElement(Container$5, null,
+        target,
+        React.createElement(DropdownContent$1, { position: position }, children)));
+};
+Dropdown$1.defaultProps = {
+    position: "bottom",
+};
+var templateObject_1$K, templateObject_2$g;
+
+var Wrapper$1 = styled.div(templateObject_1$L || (templateObject_1$L = __makeTemplateObject(["\n  position: relative;\n  width: 100%;\n"], ["\n  position: relative;\n  width: 100%;\n"])));
+var StyledNav = styled.nav(templateObject_2$h || (templateObject_2$h = __makeTemplateObject(["\n  position: fixed;\n  top: ", ";\n  left: 0;\n  right: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  height: ", "px;\n  background-color: ", ";\n  border-bottom: solid 2px rgba(133, 133, 133, 0.1);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n"], ["\n  position: fixed;\n  top: ", ";\n  left: 0;\n  right: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  height: ", "px;\n  background-color: ", ";\n  border-bottom: solid 2px rgba(133, 133, 133, 0.1);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n"])), function (_a) {
     var showMenu = _a.showMenu;
     return (showMenu ? 0 : "-" + MENU_HEIGHT + "px");
 }, MENU_HEIGHT, function (_a) {
@@ -2816,10 +2841,71 @@ var MobileOnlyOverlay = styled(Overlay)(templateObject_5$2 || (templateObject_5$
     return theme.mediaQueries.nav;
 });
 var NavMenu = styled.div(templateObject_6 || (templateObject_6 = __makeTemplateObject(["\n  display: flex;\n  justify-content: space-between;\n  width: 300px;\n  margin-left: 128px;\n\n  @media (max-width: 967px) {\n    margin-left: 20px;\n  }\n\n  @media (max-width: 670px) {\n    display: none;\n  }\n"], ["\n  display: flex;\n  justify-content: space-between;\n  width: 300px;\n  margin-left: 128px;\n\n  @media (max-width: 967px) {\n    margin-left: 20px;\n  }\n\n  @media (max-width: 670px) {\n    display: none;\n  }\n"])));
-var Navigate = styled(Link$1)(templateObject_7 || (templateObject_7 = __makeTemplateObject(["\n  font-family: CircularStd;\n  font-size: 18px;\n  font-weight: 450;\n  color: ", ";\n"], ["\n  font-family: CircularStd;\n  font-size: 18px;\n  font-weight: 450;\n  color: ", ";\n"])), function (_a) {
+var Navigate = styled(Link$1)(templateObject_7 || (templateObject_7 = __makeTemplateObject(["\n  font-family: CircularStd;\n  font-size: 18px;\n  font-weight: 450;\n  color: ", ";\n"], ["\n  font-family: CircularStd;\n  font-size: 18px;\n  font-weight: 450;\n  color: ", ";\n"
+    // const btnStyle = {
+    //   marginRight: 8,
+    //   height: 40,
+    //   width: 65,
+    //   border: 'none',
+    //   background: 'white',
+    //   borderRadius: '40px'
+    // }
+])), function (_a) {
     var theme = _a.theme;
     return theme.colors.text;
 });
+// const btnStyle = {
+//   marginRight: 8,
+//   height: 40,
+//   width: 65,
+//   border: 'none',
+//   background: 'white',
+//   borderRadius: '40px'
+// }
+var MyButton = styled.div(templateObject_8 || (templateObject_8 = __makeTemplateObject(["\n  background-color:", "\n"], ["\n  background-color:", "\n"])), function (_a) {
+    var theme = _a.theme;
+    return theme.nav.background;
+});
+var MyDropdown = styled.div(templateObject_9 || (templateObject_9 = __makeTemplateObject(["\n  background-color:", "\n"], ["\n  background-color:", "\n"])), function (_a) {
+    var theme = _a.theme;
+    return theme.nav.background;
+});
+var ChainName = styled.span(templateObject_10 || (templateObject_10 = __makeTemplateObject(["\n  color:", "\n"], ["\n  color:", "\n"])), function (_a) {
+    var theme = _a.theme;
+    return theme.colors.text;
+});
+var listStyle = {
+    padding: 0,
+    border: 'none',
+    height: 30,
+    width: 100,
+    display: 'flex',
+    justifyContent: 'space-between',
+    textDecoration: 'none',
+    cursor: 'pointer',
+    alignItems: 'center'
+};
+var BinanceIcon = function (props) {
+    return (React.createElement("svg", __assign({ width: "20", height: "20", viewBox: "0 0 16 16" }, props),
+        React.createElement("circle", { cx: "8", cy: "8", r: "8", fill: "#F0B90B" }),
+        React.createElement("path", { d: "M5.01656 8.00006L3.79256 9.23256L2.56006 8.00006L3.79256 6.76756L5.01656 8.00006ZM8.00006 5.01656L10.1081 7.12456L11.3406 5.89206L9.23256 3.79256L8.00006 2.56006L6.76756 3.79256L4.66806 5.89206L5.90056 7.12456L8.00006 5.01656ZM12.2076 6.76756L10.9836 8.00006L12.2161 9.23256L13.4401 8.00006L12.2076 6.76756ZM8.00006 10.9836L5.89206 8.87556L4.66806 10.1081L6.77606 12.2161L8.00006 13.4401L9.23256 12.2076L11.3406 10.0996L10.1081 8.87556L8.00006 10.9836ZM8.00006 9.23256L9.23256 8.00006L8.00006 6.76756L6.76756 8.00006L8.00006 9.23256Z", fill: "#FFFDFA" })));
+};
+var ChevronDownIcon = function (props) {
+    return (React.createElement("svg", __assign({ width: "20", height: "20", viewBox: "0 0 24 24" }, props),
+        React.createElement("path", { d: "M8.11997 9.29006L12 13.1701L15.88 9.29006C16.27 8.90006 16.9 8.90006 17.29 9.29006C17.68 9.68006 17.68 10.3101 17.29 10.7001L12.7 15.2901C12.31 15.6801 11.68 15.6801 11.29 15.2901L6.69997 10.7001C6.30997 10.3101 6.30997 9.68006 6.69997 9.29006C7.08997 8.91006 7.72997 8.90006 8.11997 9.29006Z", fill: "#566FFE" })));
+};
+var EthereumIcon = function (props) {
+    return (React.createElement("svg", __assign({ width: "25", height: "25", viewBox: "0 0 32 32" }, props),
+        React.createElement("g", { fill: "none", fillRule: "evenodd" },
+            React.createElement("circle", { cx: "16", cy: "16", r: "16", fill: "#627EEA" }),
+            React.createElement("g", { fill: "#FFF", fillRule: "nonzero" },
+                React.createElement("path", { fillOpacity: ".602", d: "M16.498 4v8.87l7.497 3.35z" }),
+                React.createElement("path", { d: "M16.498 4L9 16.22l7.498-3.35z" }),
+                React.createElement("path", { fillOpacity: ".602", d: "M16.498 21.968v6.027L24 17.616z" }),
+                React.createElement("path", { d: "M16.498 27.995v-6.028L9 17.616z" }),
+                React.createElement("path", { fillOpacity: ".2", d: "M16.498 20.573l7.497-4.353-7.497-3.348z" }),
+                React.createElement("path", { fillOpacity: ".602", d: "M9 16.22l7.498 4.353v-7.701z" })))));
+};
 var Menu = function (_a) {
     var _b;
     var account = _a.account, login = _a.login, logout = _a.logout, isDark = _a.isDark, toggleTheme = _a.toggleTheme, langs = _a.langs, setLang = _a.setLang, currentLang = _a.currentLang, cakePriceUsd = _a.cakePriceUsd, links = _a.links, profile = _a.profile, children = _a.children;
@@ -2828,6 +2914,7 @@ var Menu = function (_a) {
     var _c = useState(!isMobile), isPushed = _c[0], setIsPushed = _c[1];
     var _d = useState(true), showMenu = _d[0], setShowMenu = _d[1];
     var refPrevOffset = useRef(window.pageYOffset);
+    // const [darkMode, toggleDarkMode] = useDarkModeManager()
     useEffect(function () {
         var handleScroll = function () {
             var currentOffset = window.pageYOffset;
@@ -2870,6 +2957,26 @@ var Menu = function (_a) {
             React.createElement(Flex, { alignItems: "center" },
                 React.createElement(ThemeSwitcher$1, { isDark: isDark, toggleTheme: toggleTheme }),
                 React.createElement(LangSelector$1, { currentLang: currentLang, langs: langs, setLang: setLang }),
+                React.createElement(Dropdown$1, { position: "bottom", target: React.createElement(MyButton, { style: {
+                            marginRight: '8px',
+                            padding: '7px 10px',
+                            borderRadius: '40px',
+                            alignItems: 'center'
+                        } },
+                        React.createElement(BinanceIcon, null),
+                        React.createElement(ChevronDownIcon, null)) },
+                    React.createElement(MyDropdown, { style: {
+                            boxShadow: '2px 2px 10px #eeeeee',
+                            borderRadius: 4,
+                            width: 120,
+                            padding: "5px 10px"
+                        } },
+                        React.createElement("a", { href: "https://fastswap.finance/#/swap", style: listStyle },
+                            React.createElement(BinanceIcon, { style: { width: 20, height: 20 } }),
+                            React.createElement(ChainName, { style: { fontFamily: 'CircularStd' } }, "Binance")),
+                        React.createElement("a", { href: "https://fastswap.exchange/", style: listStyle },
+                            React.createElement(EthereumIcon, { style: { width: 20, height: 20 } }),
+                            React.createElement(ChainName, { style: { fontFamily: 'CircularStd' } }, "Ethereum")))),
                 React.createElement(UserBlock$1, { account: account, login: login, logout: logout }),
                 profile && React.createElement(Avatar, { profile: profile }))),
         React.createElement(BodyWrapper, null,
@@ -2877,7 +2984,7 @@ var Menu = function (_a) {
             React.createElement(Inner, { isPushed: isPushed, showMenu: showMenu }, children),
             React.createElement(MobileOnlyOverlay, { show: isPushed, onClick: function () { return setIsPushed(false); }, role: "presentation" }))));
 };
-var templateObject_1$K, templateObject_2$g, templateObject_3$8, templateObject_4$3, templateObject_5$2, templateObject_6, templateObject_7;
+var templateObject_1$L, templateObject_2$h, templateObject_3$8, templateObject_4$3, templateObject_5$2, templateObject_6, templateObject_7, templateObject_8, templateObject_9, templateObject_10;
 
 var ToastAction = function (_a) {
     var action = _a.action;
@@ -2901,7 +3008,7 @@ var alertTypeMap = (_a$2 = {},
     _a$2[types.DANGER] = variants$1.DANGER,
     _a$2[types.WARNING] = variants$1.WARNING,
     _a$2);
-var StyledToast = styled.div(templateObject_1$L || (templateObject_1$L = __makeTemplateObject(["\n  right: 16px;\n  position: fixed;\n  max-width: calc(100% - 32px);\n  transition: all 250ms ease-in;\n  width: 100%;\n\n  ", " {\n    max-width: 400px;\n  }\n"], ["\n  right: 16px;\n  position: fixed;\n  max-width: calc(100% - 32px);\n  transition: all 250ms ease-in;\n  width: 100%;\n\n  ", " {\n    max-width: 400px;\n  }\n"])), function (_a) {
+var StyledToast = styled.div(templateObject_1$M || (templateObject_1$M = __makeTemplateObject(["\n  right: 16px;\n  position: fixed;\n  max-width: calc(100% - 32px);\n  transition: all 250ms ease-in;\n  width: 100%;\n\n  ", " {\n    max-width: 400px;\n  }\n"], ["\n  right: 16px;\n  position: fixed;\n  max-width: calc(100% - 32px);\n  transition: all 250ms ease-in;\n  width: 100%;\n\n  ", " {\n    max-width: 400px;\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.mediaQueries.sm;
 });
@@ -2940,11 +3047,11 @@ var Toast = function (_a) {
                 React.createElement(Text, { as: "p", mb: "8px" }, description),
                 React.createElement(ToastAction, { action: action }))) : (description)))));
 };
-var templateObject_1$L;
+var templateObject_1$M;
 
 var ZINDEX = 1000;
 var TOP_POSITION = 80; // Initial position from the top
-var StyledToastContainer = styled.div(templateObject_1$M || (templateObject_1$M = __makeTemplateObject(["\n  .enter,\n  .appear {\n    opacity: 0.01;\n  }\n\n  .enter.enter-active,\n  .appear.appear-active {\n    opacity: 1;\n    transition: opacity 250ms ease-in;\n  }\n\n  .exit {\n    opacity: 1;\n  }\n\n  .exit.exit-active {\n    opacity: 0.01;\n    transition: opacity 250ms ease-out;\n  }\n"], ["\n  .enter,\n  .appear {\n    opacity: 0.01;\n  }\n\n  .enter.enter-active,\n  .appear.appear-active {\n    opacity: 1;\n    transition: opacity 250ms ease-in;\n  }\n\n  .exit {\n    opacity: 1;\n  }\n\n  .exit.exit-active {\n    opacity: 0.01;\n    transition: opacity 250ms ease-out;\n  }\n"])));
+var StyledToastContainer = styled.div(templateObject_1$N || (templateObject_1$N = __makeTemplateObject(["\n  .enter,\n  .appear {\n    opacity: 0.01;\n  }\n\n  .enter.enter-active,\n  .appear.appear-active {\n    opacity: 1;\n    transition: opacity 250ms ease-in;\n  }\n\n  .exit {\n    opacity: 1;\n  }\n\n  .exit.exit-active {\n    opacity: 0.01;\n    transition: opacity 250ms ease-out;\n  }\n"], ["\n  .enter,\n  .appear {\n    opacity: 0.01;\n  }\n\n  .enter.enter-active,\n  .appear.appear-active {\n    opacity: 1;\n    transition: opacity 250ms ease-in;\n  }\n\n  .exit {\n    opacity: 1;\n  }\n\n  .exit.exit-active {\n    opacity: 0.01;\n    transition: opacity 250ms ease-out;\n  }\n"])));
 var ToastContainer = function (_a) {
     var toasts = _a.toasts, onRemove = _a.onRemove, _b = _a.ttl, ttl = _b === void 0 ? 6000 : _b, _c = _a.stackSpacing, stackSpacing = _c === void 0 ? 24 : _c;
     return (React.createElement(StyledToastContainer, null,
@@ -2954,16 +3061,16 @@ var ToastContainer = function (_a) {
             return (React.createElement(Toast, { key: toast.id, toast: toast, onRemove: onRemove, ttl: ttl, style: { top: top + "px", zIndex: zIndex } }));
         }))));
 };
-var templateObject_1$M;
+var templateObject_1$N;
 
-var ResetCSS = createGlobalStyle(templateObject_1$N || (templateObject_1$N = __makeTemplateObject(["\n  /* prettier-ignore */\n  html, body, div, span, applet, object, iframe,\n  h1, h2, h3, h4, h5, h6, p, blockquote, pre,\n  a, abbr, acronym, address, big, cite, code,\n  del, dfn, em, img, ins, kbd, q, s, samp,\n  small, strike, strong, sub, sup, tt, var,\n  b, u, i, center,\n  dl, dt, dd, ol, ul, li,\n  fieldset, form, label, legend,\n  table, caption, tbody, tfoot, thead, tr, th, td,\n  article, aside, canvas, details, embed, \n  figure, figcaption, footer, header, hgroup, \n  menu, nav, output, ruby, section, summary,\n  time, mark, audio, video {\n    margin: 0;\n    padding: 0;\n    border: 0;\n    font-size: 100%;\n    vertical-align: baseline;\n  }\n  /* HTML5 display-role reset for older browsers */\n  /* prettier-ignore */\n  article, aside, details, figcaption, figure, \n  footer, header, hgroup, menu, nav, section {\n    display: block;\n  }\n  body {\n    line-height: 1;\n    font-size: 16px;\n  }\n  ol,\n  ul {\n    list-style: disc;\n    list-style-position: inside;\n  }\n  blockquote,\n  q {\n    quotes: none;\n  }\n  blockquote:before,\n  blockquote:after,\n  q:before,\n  q:after {\n    content: \"\";\n    content: none;\n  }\n  table {\n    border-collapse: collapse;\n    border-spacing: 0;\n  }\n  a {\n    color: inherit;\n    text-decoration: none;\n  }\n  [role=\"button\"] {\n    cursor: pointer;\n  }\n  *,\n  *::before,\n  *::after {\n    box-sizing: border-box;\n  }\n  * {\n    font-family: 'Kanit', sans-serif;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n  }\n  /* Scrollbar */\n  ::-webkit-scrollbar {\n    width: 8px;\n  }\n  ::-webkit-scrollbar-thumb {\n    background: ", ";\n    border-radius: 8px;\n  }\n  ::-webkit-scrollbar-track {\n    box-shadow: inset 0 0 5px ", "; \n    border-radius: 10px;\n  }\n"], ["\n  /* prettier-ignore */\n  html, body, div, span, applet, object, iframe,\n  h1, h2, h3, h4, h5, h6, p, blockquote, pre,\n  a, abbr, acronym, address, big, cite, code,\n  del, dfn, em, img, ins, kbd, q, s, samp,\n  small, strike, strong, sub, sup, tt, var,\n  b, u, i, center,\n  dl, dt, dd, ol, ul, li,\n  fieldset, form, label, legend,\n  table, caption, tbody, tfoot, thead, tr, th, td,\n  article, aside, canvas, details, embed, \n  figure, figcaption, footer, header, hgroup, \n  menu, nav, output, ruby, section, summary,\n  time, mark, audio, video {\n    margin: 0;\n    padding: 0;\n    border: 0;\n    font-size: 100%;\n    vertical-align: baseline;\n  }\n  /* HTML5 display-role reset for older browsers */\n  /* prettier-ignore */\n  article, aside, details, figcaption, figure, \n  footer, header, hgroup, menu, nav, section {\n    display: block;\n  }\n  body {\n    line-height: 1;\n    font-size: 16px;\n  }\n  ol,\n  ul {\n    list-style: disc;\n    list-style-position: inside;\n  }\n  blockquote,\n  q {\n    quotes: none;\n  }\n  blockquote:before,\n  blockquote:after,\n  q:before,\n  q:after {\n    content: \"\";\n    content: none;\n  }\n  table {\n    border-collapse: collapse;\n    border-spacing: 0;\n  }\n  a {\n    color: inherit;\n    text-decoration: none;\n  }\n  [role=\"button\"] {\n    cursor: pointer;\n  }\n  *,\n  *::before,\n  *::after {\n    box-sizing: border-box;\n  }\n  * {\n    font-family: 'Kanit', sans-serif;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n  }\n  /* Scrollbar */\n  ::-webkit-scrollbar {\n    width: 8px;\n  }\n  ::-webkit-scrollbar-thumb {\n    background: ", ";\n    border-radius: 8px;\n  }\n  ::-webkit-scrollbar-track {\n    box-shadow: inset 0 0 5px ", "; \n    border-radius: 10px;\n  }\n"])), function (_a) {
+var ResetCSS = createGlobalStyle(templateObject_1$O || (templateObject_1$O = __makeTemplateObject(["\n  /* prettier-ignore */\n  html, body, div, span, applet, object, iframe,\n  h1, h2, h3, h4, h5, h6, p, blockquote, pre,\n  a, abbr, acronym, address, big, cite, code,\n  del, dfn, em, img, ins, kbd, q, s, samp,\n  small, strike, strong, sub, sup, tt, var,\n  b, u, i, center,\n  dl, dt, dd, ol, ul, li,\n  fieldset, form, label, legend,\n  table, caption, tbody, tfoot, thead, tr, th, td,\n  article, aside, canvas, details, embed, \n  figure, figcaption, footer, header, hgroup, \n  menu, nav, output, ruby, section, summary,\n  time, mark, audio, video {\n    margin: 0;\n    padding: 0;\n    border: 0;\n    font-size: 100%;\n    vertical-align: baseline;\n  }\n  /* HTML5 display-role reset for older browsers */\n  /* prettier-ignore */\n  article, aside, details, figcaption, figure, \n  footer, header, hgroup, menu, nav, section {\n    display: block;\n  }\n  body {\n    line-height: 1;\n    font-size: 16px;\n  }\n  ol,\n  ul {\n    list-style: disc;\n    list-style-position: inside;\n  }\n  blockquote,\n  q {\n    quotes: none;\n  }\n  blockquote:before,\n  blockquote:after,\n  q:before,\n  q:after {\n    content: \"\";\n    content: none;\n  }\n  table {\n    border-collapse: collapse;\n    border-spacing: 0;\n  }\n  a {\n    color: inherit;\n    text-decoration: none;\n  }\n  [role=\"button\"] {\n    cursor: pointer;\n  }\n  *,\n  *::before,\n  *::after {\n    box-sizing: border-box;\n  }\n  * {\n    font-family: 'Kanit', sans-serif;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n  }\n  /* Scrollbar */\n  ::-webkit-scrollbar {\n    width: 8px;\n  }\n  ::-webkit-scrollbar-thumb {\n    background: ", ";\n    border-radius: 8px;\n  }\n  ::-webkit-scrollbar-track {\n    box-shadow: inset 0 0 5px ", "; \n    border-radius: 10px;\n  }\n"], ["\n  /* prettier-ignore */\n  html, body, div, span, applet, object, iframe,\n  h1, h2, h3, h4, h5, h6, p, blockquote, pre,\n  a, abbr, acronym, address, big, cite, code,\n  del, dfn, em, img, ins, kbd, q, s, samp,\n  small, strike, strong, sub, sup, tt, var,\n  b, u, i, center,\n  dl, dt, dd, ol, ul, li,\n  fieldset, form, label, legend,\n  table, caption, tbody, tfoot, thead, tr, th, td,\n  article, aside, canvas, details, embed, \n  figure, figcaption, footer, header, hgroup, \n  menu, nav, output, ruby, section, summary,\n  time, mark, audio, video {\n    margin: 0;\n    padding: 0;\n    border: 0;\n    font-size: 100%;\n    vertical-align: baseline;\n  }\n  /* HTML5 display-role reset for older browsers */\n  /* prettier-ignore */\n  article, aside, details, figcaption, figure, \n  footer, header, hgroup, menu, nav, section {\n    display: block;\n  }\n  body {\n    line-height: 1;\n    font-size: 16px;\n  }\n  ol,\n  ul {\n    list-style: disc;\n    list-style-position: inside;\n  }\n  blockquote,\n  q {\n    quotes: none;\n  }\n  blockquote:before,\n  blockquote:after,\n  q:before,\n  q:after {\n    content: \"\";\n    content: none;\n  }\n  table {\n    border-collapse: collapse;\n    border-spacing: 0;\n  }\n  a {\n    color: inherit;\n    text-decoration: none;\n  }\n  [role=\"button\"] {\n    cursor: pointer;\n  }\n  *,\n  *::before,\n  *::after {\n    box-sizing: border-box;\n  }\n  * {\n    font-family: 'Kanit', sans-serif;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n  }\n  /* Scrollbar */\n  ::-webkit-scrollbar {\n    width: 8px;\n  }\n  ::-webkit-scrollbar-thumb {\n    background: ", ";\n    border-radius: 8px;\n  }\n  ::-webkit-scrollbar-track {\n    box-shadow: inset 0 0 5px ", "; \n    border-radius: 10px;\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.colors.textSubtle;
 }, function (_a) {
     var theme = _a.theme;
     return theme.colors.input;
 });
-var templateObject_1$N;
+var templateObject_1$O;
 
 var baseColors = {
     failure: "#ED4B9E",
