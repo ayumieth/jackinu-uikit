@@ -53,4 +53,8 @@ export const styleVariants = {
     color: "primary",
     boxShadow: "none",
   },
+  [variants.SPECIAL]: {
+    background: "linear-gradient(180deg, #32E2FA 0%, #5177FF 51.56%, #D674FF 100%)",
+    color: "white",
+  }
 };

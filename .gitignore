@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /.storybook
+/build
 
 # testing
 /coverage

@@ -14,6 +14,7 @@ const StyledButtonMenu = styled.div<{ variant: Variant }>`
   background-color: ${getBackgroundColor};
   border-radius: 16px;
   display: inline-flex;
+  padding: 0.5px 1px;
 
   & > button + button,
   & > a + a {

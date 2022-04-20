@@ -25,7 +25,7 @@ const CakePrice: React.FC<Props> = ({ cakePriceUsd }) => {
   return cakePriceUsd ? (
     <PriceLink href="http://info.fastswap.finance/token/0xfea6218871b7851748881a4af6bca63af1b769a8" target="_blank">
       <PancakeRoundIcon width="24px" mr="8px" />
-      <Text color="primary" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
+      <Text color="text" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
     </PriceLink>
   ) : (
     <Skeleton width={80} height={24} />

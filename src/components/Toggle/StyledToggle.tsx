@@ -4,20 +4,20 @@ import { ToggleProps, HandleProps, InputProps, ScaleKeys } from "./types";
 
 const scaleKeyValues = {
   sm: {
-    handleHeight: "16px",
-    handleWidth: "16px",
-    handleLeft: "2px",
-    handleTop: "2px",
-    checkedLeft: "calc(100% - 18px)",
-    toggleHeight: "20px",
-    toggleWidth: "36px",
+    handleHeight: "21px",
+    handleWidth: "21px",
+    handleLeft: "1px",
+    handleTop: "1px",
+    checkedLeft: "calc(100% - 22px)",
+    toggleHeight: "25px",
+    toggleWidth: "46px",
   },
   md: {
     handleHeight: "32px",
     handleWidth: "32px",
-    handleLeft: "4px",
-    handleTop: "4px",
-    checkedLeft: "calc(100% - 36px)",
+    handleLeft: "3px",
+    handleTop: "3px",
+    checkedLeft: "calc(100% - 35px)",
     toggleHeight: "40px",
     toggleWidth: "72px",
   },
@@ -68,6 +68,7 @@ const StyledToggle = styled.div<ToggleProps>`
   box-shadow: ${({ theme }) => theme.shadows.inset};
   cursor: pointer;
   display: inline-flex;
+  border: 1px solid #566FFE;
   height: ${getScale("toggleHeight")};
   position: relative;
   transition: background-color 200ms;
