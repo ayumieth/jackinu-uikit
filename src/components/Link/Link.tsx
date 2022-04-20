@@ -11,6 +11,10 @@ const StyledLink = styled(Text)<LinkProps>`
   &:hover {
     text-decoration: underline;
   }
+  
+  svg {
+    fill: ${({ theme }) => theme.colors.text};
+  }
 `;
 
 const Link: React.FC<LinkProps> = ({ external, ...props }) => {
