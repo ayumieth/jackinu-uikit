@@ -1,19 +1,19 @@
-import React, { useState, useEffect, useRef, SVGAttributes } from "react";
+import React, { useState, useEffect, useRef, SVGAttributes } from "react"
 import { Link } from 'react-router-dom'
-import styled, { DefaultTheme } from "styled-components";
-import throttle from "lodash/throttle";
-import Overlay from "../../components/Overlay/Overlay";
-import Flex from "../../components/Box/Flex";
-import { useMatchBreakpoints } from "../../hooks";
-import Logo from "./components/Logo";
-import Panel from "./components/Panel";
-import UserBlock from "./components/UserBlock";
-import LangSelector from "./components/LangSelector";
-import ThemeSwitcher from "./components/ThemeSwitcher";
-import { NavProps } from "./types";
-import Avatar from "./components/Avatar";
-import { MENU_HEIGHT, SIDEBAR_WIDTH_REDUCED, SIDEBAR_WIDTH_FULL } from "./config";
-import Dropdown from '../../components/DropBox';
+import styled, { DefaultTheme } from "styled-components"
+import throttle from "lodash/throttle"
+import Overlay from "../../components/Overlay/Overlay"
+import Flex from "../../components/Box/Flex"
+import { useMatchBreakpoints } from "../../hooks"
+import Logo from "./components/Logo"
+import Panel from "./components/Panel"
+import UserBlock from "./components/UserBlock"
+import LangSelector from "./components/LangSelector"
+import ThemeSwitcher from "./components/ThemeSwitcher"
+import { NavProps } from "./types"
+import Avatar from "./components/Avatar"
+import { MENU_HEIGHT, SIDEBAR_WIDTH_REDUCED, SIDEBAR_WIDTH_FULL } from "./config"
+import Dropdown from '../../components/DropBox'
 // import { useDarkModeManager } from '../../state/user/hooks'
 import { SpaceProps } from "styled-system";
 

@@ -80,6 +80,10 @@ const ResetCSS = createGlobalStyle`
     box-shadow: inset 0 0 5px ${({ theme }) => theme.colors.input}; 
     border-radius: 10px;
   }
+  @font-face {
+    font-family: 'CircularStd';
+    src: url('./styles/CircularStd/CircularStd.ttf')
+  }
 `;
 
 export default ResetCSS;
