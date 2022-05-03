@@ -705,11 +705,8 @@ var Breadcrumbs = function (_a) {
 };
 var templateObject_1$7, templateObject_2$2;
 
-var getBackgroundColor = function (_a) {
-    var theme = _a.theme, variant = _a.variant;
-    return theme.colors[variant === variants.SUBTLE ? "input" : "tertiary"];
-};
-var StyledButtonMenu = styled.div(templateObject_1$8 || (templateObject_1$8 = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: 16px;\n  display: inline-flex;\n  padding: 0.5px 1px;\n\n  & > button + button,\n  & > a + a {\n    margin-left: 2px; // To avoid focus shadow overlap\n  }\n"], ["\n  background-color: ", ";\n  border-radius: 16px;\n  display: inline-flex;\n  padding: 0.5px 1px;\n\n  & > button + button,\n  & > a + a {\n    margin-left: 2px; // To avoid focus shadow overlap\n  }\n"])), getBackgroundColor);
+//background-color: ${getBackgroundColor};
+var StyledButtonMenu = styled.div(templateObject_1$8 || (templateObject_1$8 = __makeTemplateObject(["\n  background-color:none;\n  border-radius: 16px;\n  display: inline-flex;\n  padding: 0.5px 1px;\n\n  & > button + button,\n  & > a + a {\n    margin-left: 2px; // To avoid focus shadow overlap\n  }\n"], ["\n  background-color:none;\n  border-radius: 16px;\n  display: inline-flex;\n  padding: 0.5px 1px;\n\n  & > button + button,\n  & > a + a {\n    margin-left: 2px; // To avoid focus shadow overlap\n  }\n"])));
 var templateObject_1$8;
 
 var ButtonMenu = function (_a) {
@@ -757,7 +754,7 @@ var getBoxShadow = function (_a) {
     }
     return theme.card.boxShadow;
 };
-var StyledCard = styled.div(templateObject_1$a || (templateObject_1$a = __makeTemplateObject(["\n  background-color: ", ";\n  border: ", ";\n  border-radius: 32px;\n  box-shadow: ", ";\n  color: ", ";\n  overflow: hidden;\n  position: relative;\n\n  ", "\n"], ["\n  background-color: ", ";\n  border: ", ";\n  border-radius: 32px;\n  box-shadow: ", ";\n  color: ", ";\n  overflow: hidden;\n  position: relative;\n\n  ", "\n"])), function (_a) {
+var StyledCard = styled.div(templateObject_1$a || (templateObject_1$a = __makeTemplateObject(["\n  background-color: ", ";\n  border: ", ";\n  border-radius:32px;\n  box-shadow: ", ";\n  color: ", ";\n  overflow: hidden;\n  position: relative;\n\n  ", "\n"], ["\n  background-color: ", ";\n  border: ", ";\n  border-radius:32px;\n  box-shadow: ", ";\n  color: ", ";\n  overflow: hidden;\n  position: relative;\n\n  ", "\n"])), function (_a) {
     var theme = _a.theme;
     return theme.card.background;
 }, function (_a) {
