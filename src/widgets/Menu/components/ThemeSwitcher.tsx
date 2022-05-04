@@ -16,16 +16,17 @@ interface Props {
 const ThemeSwitcher: React.FC<Props> = ({ isDark, toggleTheme }) => {
 
   return (
-  <Button variant="text" onClick={() => toggleTheme(!isDark)} padding="0px 8px">
-    {/* alignItems center is a Safari fix */}
-    <Flex alignItems="center">
-      <SunIcon fill={isDark ? "white" : "#183B56"} />
-      <Text color={isDark ? "white" : "#183B56"} mx="4px">
-        
-      </Text>
-      <MoonIcon fill={isDark ? "white" : "#183B56"} />
-    </Flex>
-  </Button>
-)};
+    <Button variant="text" onClick={() => toggleTheme(!isDark)} padding="0px 8px">
+      {/* alignItems center is a Safari fix */}
+      <Flex alignItems="center">
+        <SunIcon fill={isDark ? "white" : "#183B56"} />
+        <Text color={isDark ? "white" : "#183B56"} mx="4px">
+          /
+        </Text>
+        <MoonIcon fill={isDark ? "white" : "#183B56"} />
+      </Flex>
+    </Button>
+  )
+};
 
 export default React.memo(ThemeSwitcher, (prev, next) => prev.isDark === next.isDark);
