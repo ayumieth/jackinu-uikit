@@ -45,4 +45,5 @@ export interface NavProps extends PanelProps {
     login: Login;
     profile?: Profile;
     logout: () => void;
+    isMarket?: boolean;
 }

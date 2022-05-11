@@ -116,7 +116,9 @@ const listStyle = {
   cursor: 'pointer',
   alignItems: 'center'
 }
-
+const MarketPanel = styled.div<{ showMenu: boolean }>`
+  padding-top: ${({ showMenu }) => (showMenu ? "66px" : 0)};
+`
 
 interface SvgProps extends SVGAttributes<HTMLOrSVGElement>, SpaceProps {
   theme?: DefaultTheme;
@@ -168,6 +170,7 @@ const Menu: React.FC<NavProps> = ({
   login,
   logout,
   isDark,
+  isMarket = false,
   toggleTheme,
   langs,
   setLang,
@@ -269,25 +272,29 @@ const Menu: React.FC<NavProps> = ({
           {profile && <Avatar profile={profile} />}
         </Flex>
       </StyledNav>
-      <BodyWrapper>
-        <Panel
-          isPushed={isPushed}
-          isMobile={isMobile}
-          showMenu={showMenu}
-          isDark={isDark}
-          toggleTheme={toggleTheme}
-          langs={langs}
-          setLang={setLang}
-          currentLang={currentLang}
-          cakePriceUsd={cakePriceUsd}
-          pushNav={setIsPushed}
-          links={links}
-        />
-        <Inner isPushed={isPushed} showMenu={showMenu}>
-          {children}
-        </Inner>
-        <MobileOnlyOverlay show={isPushed} onClick={() => setIsPushed(false)} role="presentation" />
-      </BodyWrapper>
+      {
+        isMarket ?
+          <MarketPanel showMenu={showMenu}>{children}</MarketPanel> :
+          <BodyWrapper>
+            <Panel
+              isPushed={isPushed}
+              isMobile={isMobile}
+              showMenu={showMenu}
+              isDark={isDark}
+              toggleTheme={toggleTheme}
+              langs={langs}
+              setLang={setLang}
+              currentLang={currentLang}
+              cakePriceUsd={cakePriceUsd}
+              pushNav={setIsPushed}
+              links={links}
+            />
+            <Inner isPushed={isPushed} showMenu={showMenu}>
+              {children}
+            </Inner>
+            <MobileOnlyOverlay show={isPushed} onClick={() => setIsPushed(false)} role="presentation" />
+          </BodyWrapper>
+      }
     </Wrapper >
   );
 };
