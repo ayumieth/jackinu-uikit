@@ -60,7 +60,7 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
           );
         }
         return (
-          <MenuEntry key={entry.label} isActive={entry.href === location.pathname || entry.label === 'NFT Marketplace'} className={calloutClass}>
+          <MenuEntry key={entry.label} isActive={entry.href === location.pathname} className={calloutClass}>
             <MenuLink href={entry.href} onClick={handleClick}>
               {iconElement}
               <LinkLabel isPushed={isPushed} style={{ fontFamily: 'CircularStd' }}>{entry.label}</LinkLabel>
