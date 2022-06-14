@@ -16,6 +16,7 @@ interface Props {
 const StyledLink = styled(Link)`
   display: flex;
   align-items: center;
+  margin-left: 10px;
   .mobile-icon {
     width: 32px;
     ${({ theme }) => theme.mediaQueries.nav} {
@@ -37,23 +38,24 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
     <>
       <LogoWithText className="desktop-icon" isDark={isDark} />
     </>
-  );
+  )
+  const isMarket = window.location.href.startsWith('https://nft.fastswap.finance')
 
   return (
     <Flex>
-      <MenuButton aria-label="Toggle menu" onClick={togglePush} mr="24px">
+      {!isMarket && <MenuButton aria-label="Toggle menu" onClick={togglePush} mr="24px">
         {isPushed ? (
           <HamburgerCloseIcon width="24px" color="primary" />
         ) : (
           <HamburgerIcon width="24px" color="primary" />
         )}
-      </MenuButton>
+      </MenuButton>}
       {isAbsoluteUrl ? (
-        <StyledLink as="a" href={href} aria-label="Pancake home page">
+        <StyledLink as="a" href={href} aria-label="Fastswap home page">
           {innerLogo}
         </StyledLink>
       ) : (
-        <StyledLink to={href} aria-label="Pancake home page">
+        <StyledLink to={href} aria-label="Fastswap home page">
           {innerLogo}
         </StyledLink>
       )}

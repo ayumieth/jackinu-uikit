@@ -38,6 +38,11 @@ export interface MenuEntry {
   initialOpenState?: boolean;
 }
 
+export interface TopMenuEntry {
+  label: string;
+  translated: string;
+}
+
 export interface PanelProps {
   isDark: boolean;
   toggleTheme: (isDark: boolean) => void;
@@ -46,6 +51,7 @@ export interface PanelProps {
   langs: LangType[];
   setLang: (lang: LangType) => void;
   links: Array<MenuEntry>;
+  topMenu?: Array<TopMenuEntry>;
 }
 
 export interface NavProps extends PanelProps {

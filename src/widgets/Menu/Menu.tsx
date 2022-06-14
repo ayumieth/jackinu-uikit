@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef, SVGAttributes } from "react"
-import { Link } from 'react-router-dom'
 import styled, { DefaultTheme } from "styled-components"
 import throttle from "lodash/throttle"
 import Overlay from "../../components/Overlay/Overlay"
@@ -83,20 +82,14 @@ const NavMenu = styled.div`
   }
 `
 
-const Navigate = styled(Link)`
+const Navigate = styled.a`
   font-family: CircularStd;
   font-size: 18px;
   font-weight: 450;
+  text-decoration: none;
   color: ${({ theme }) => theme.colors.text};
 `
-// const btnStyle = {
-//   marginRight: 8,
-//   height: 40,
-//   width: 65,
-//   border: 'none',
-//   background: 'white',
-//   borderRadius: '40px'
-// }
+
 const MyButton = styled.div`
   background-color:${({ theme }) => theme.nav.background}
 `
@@ -180,6 +173,7 @@ const Menu: React.FC<NavProps> = ({
   cakePriceUsd,
   links,
   profile,
+  topMenu,
   children,
 }) => {
   const { isXl } = useMatchBreakpoints();
@@ -232,10 +226,10 @@ const Menu: React.FC<NavProps> = ({
             href={homeLink?.href ?? "/"}
           />
           <NavMenu>
-            <Navigate to="#">Trade</Navigate>
-            <Navigate to="#">Earn</Navigate>
-            <Navigate to="#">Win</Navigate>
-            <Navigate to="#">NFT</Navigate>
+            <Navigate href="https://fastswap.finance/">{topMenu ? topMenu[0].translated : 'Trade'}</Navigate>
+            <Navigate href="#">{topMenu ? topMenu[1].translated : 'Earn'}</Navigate>
+            <Navigate href="#">{topMenu ? topMenu[2].translated : 'Win'}</Navigate>
+            <Navigate href="https://nft.fastswap.finance/">{topMenu ? topMenu[3].translated : 'NFT'}</Navigate>
           </NavMenu>
         </Flex>
         <Flex alignItems="center">
