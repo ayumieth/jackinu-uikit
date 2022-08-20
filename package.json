@@ -1,14 +1,14 @@
 {
-  "name": "@fastswap/uikit",
+  "name": "@jackinu/uikit",
   "version": "0.14.1",
-  "description": "Set of UI components for fastswap projects",
+  "description": "Set of UI components for jackinu projects",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/pancakeswap/pancake-uikit",
+  "repository": "https://github.com/ayumieth/jackinu-uikit.git",
   "license": "MIT",
   "scripts": {
     "build": "rm -rf ./dist && rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist",
